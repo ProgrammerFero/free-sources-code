@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Fero</title>
+    <style>
+        * {
+    margin:0;
+    padding:0;
+    background-color:#f3c2ff;
+}
+
+.heart {
+    width:200px;
+    height:200px;
+    background-color:#f00;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    box-shadow:0 0 50px 5px #000;
+    transform:rotate(45deg);
+    animation-name:scale;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
+.heart:before {
+    content:"";
+    width:200px;
+    height:200px;
+    background-color:#f00;
+    position:absolute;
+    right:50%;
+    border-radius:50%;
+}
+
+.heart:after {
+    content:"";
+    width:200px;
+    height:200px;
+    background-color:#f00;
+    position:absolute;
+    bottom:50%;
+    border-radius:50%;
+}
+
+@keyframes scale {
+    0% { transform:rotate(45deg) scale(1) }
+    50% { transform:rotate(45deg) scale(0.75) }
+    100% { transform:rotate(45deg) scale(1) }
+}
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+</body>
+</html>
