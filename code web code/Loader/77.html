@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Fero</title>
+    <style>
+        .loader {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader-text {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.loader-bar {
+  width: 30%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  animation: loader-bar-animation 2s ease-in-out infinite;
+}
+
+@keyframes loader-bar-animation {
+  0% {
+    /* transform: translateX(-100%) rotate(270deg); */
+    transform: translateX(-100%);
+  }
+
+  50% {
+    /* transform: translateX(100%) rotate(-90deg); */
+    transform: translateX(100%);
+  }
+
+  100% {
+    /* transform: translateX(-100%) rotate(270deg); */
+    transform: translateX(-100%);
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-text">Loading...</div>
+        <div class="loader-bar"></div>
+      </div>
+      
+</body>
+</html>

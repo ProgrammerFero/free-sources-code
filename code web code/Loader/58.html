@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Fero</title>
+    <style>
+        .code-loader {
+  color: #fff;
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 100px;
+  opacity: 0.8;
+}
+
+.code-loader span {
+  display: inline-block;
+  animation: pulse_414 0.4s alternate infinite ease-in-out;
+}
+
+.code-loader span:nth-child(odd) {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse_414 {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="code-loader">
+        <span>{</span><span>}</span>
+      </div>
+</body>
+</html>

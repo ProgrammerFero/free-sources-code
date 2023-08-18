@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Fero</title>
+    <style>
+        .load {
+  display: flex;
+  border-radius: 50%;
+  flex-direction: row;
+}
+
+.progress {
+  width: 2em;
+  height: 2em;
+  margin: 0.4em;
+  scale: 0;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  animation: loading_492 2s ease infinite;
+  animation-delay: 1s;
+}
+
+@keyframes loading_492 {
+  50% {
+    scale: 1;
+  }
+}
+
+.progress:nth-child(2) {
+  animation-delay: 1.3s;
+}
+
+.progress:nth-child(3) {
+  animation-delay: 1.7s;
+}
+    </style>
+</head>
+<body>
+    <div class="load">
+        <div class="progress"></div>
+        <div class="progress"></div>
+        <div class="progress"></div>
+    </div>
+</body>
+</html>

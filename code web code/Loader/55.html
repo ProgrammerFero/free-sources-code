@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Fero</title>
+    <style>
+        .container {
+  width: fit-content;
+  gap: 10px
+}
+
+.folder {
+  width: min-content;
+  margin: auto;
+  animation: float 2s infinite linear;
+}
+
+.folder .top {
+  background-color: #FF8F56;
+  width: 60px;
+  height: 12px;
+  border-top-right-radius: 10px;
+}
+
+.folder .bottom {
+  background-color: #FFCE63;
+  width: 100px;
+  height: 70px;
+  box-shadow: 5px 5px 0 0 #283149;
+  border-top-right-radius: 8px;
+}
+
+.container .title {
+  font-size: .9em;
+  color: #283149;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-25px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="folder">
+          <div class="top"></div>
+          <div class="bottom"></div>
+        </div>
+        <div class="title">getting files ready...</div>
+      </div>
+</body>
+</html>
