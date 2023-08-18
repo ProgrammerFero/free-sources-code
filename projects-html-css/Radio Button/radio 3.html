@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/Projects-Html-Css/radio-button.css">
+    <link rel="shortcut icon" href="../../assset/mylogo.png" type="image/x-icon">
+    <title>Programmer Fero</title>
+    <style>
+        .tain .origin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 2px;
+  margin: -1px 0 0 -1px;
+  background-color: #f50;
+}
+
+.de {
+  user-select: none;
+  position: relative;
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+  background-color: transparent;
+}
+
+.de .den, .de .dene, .de .denem, .de .deneme, .de .light, .de .dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.den {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: -110px 0 0 -110px;
+  border-radius: 100%;
+  box-shadow: inset 0 3px 10px rgba(0, 0, 0, .6), 0 2px 20px rgba(255, 255, 255, 1);
+  background: #888888;
+  background: -moz-radial-gradient(center, ellipse cover, #888888 0%, #333333 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #888888), color-stop(100%, #333333));
+  background: -webkit-radial-gradient(center, ellipse cover, #888888 0%, #333333 100%);
+  background: -o-radial-gradient(center, ellipse cover, #888888 0%, #333333 100%);
+}
+
+.dene {
+  width: 140px;
+  height: 140px;
+  margin: -70px 0 0 -70px;
+  border-radius: 100%;
+  box-shadow: inset 0 2px 2px rgba(255, 255, 255, .4), 0 3px 13px rgba(0, 0, 0, .85);
+  background: #f2f6f5;
+  background: -moz-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f6f5), color-stop(100%, #cbd5d6));
+  background: -webkit-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+  background: -o-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+}
+
+.denem {
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  border-radius: 100%;
+  background: #cbd5d6;
+  background: -moz-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cbd5d6), color-stop(100%, #f2f6f5));
+  background: -webkit-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
+  background: -o-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
+}
+
+.deneme {
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  border-radius: 100%;
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, .6), 0 8px 20px rgba(0, 0, 0, .9);
+  background: #eef7f6;
+  background: -moz-linear-gradient(top, #eef7f6 0%, #8d989a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eef7f6), color-stop(100%, #8d989a));
+  background: -webkit-linear-gradient(top, #eef7f6 0%, #8d989a 100%);
+  background: -o-linear-gradient(top, #eef7f6 0%, #8d989a 100%);
+}
+
+.den .switch {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.den .switch label {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 70px;
+  margin-top: -35px;
+  transform-origin: 0% 50%;
+  -webkit-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+}
+
+.den .switch label:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 1px;
+  width: 100%;
+  height: 30px;
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
+
+.den .switch label:before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 1px;
+  width: 100%;
+  height: 30px;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+
+.den .switch label span {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 70px;
+  text-align: center;
+  color: #eee;
+  text-shadow: 0 1px 0 #444;
+}
+
+.den .switch label:nth-child(1) {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.den .switch label:nth-child(1) span {
+  right: 2px;
+  font-size: 13px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.den .switch label:nth-child(2) {
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
+
+.den .switch label:nth-child(2) span {
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+
+.den .switch label:nth-child(3) {
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+
+.den .switch label:nth-child(3) span {
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
+
+.den .switch label:nth-child(4) {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.den .switch label:nth-child(4) span {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.den .switch label:nth-child(5) {
+  transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+}
+
+.den .switch label:nth-child(5) span {
+  transform: rotate(-150deg);
+  -webkit-transform: rotate(-150deg);
+  -o-transform: rotate(-150deg);
+}
+
+.den .switch label:nth-child(6) {
+  transform: rotate(210deg);
+  -webkit-transform: rotate(210deg);
+  -o-transform: rotate(210deg);
+}
+
+.den .switch label:nth-child(6) span {
+  transform: rotate(-210deg);
+  -webkit-transform: rotate(-210deg);
+  -o-transform: rotate(-210deg);
+}
+
+.den .switch input {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* SWITCH LIGHT */
+
+.den .light {
+  z-index: 1;
+  width: 50%;
+  height: 100px;
+  margin-top: -50px;
+  transform-origin: 0% 50%;
+  -webkit-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -o-transition: all .5s;
+}
+
+.den .light span {
+  opacity: .4;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 100px;
+  height: 100px;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(184, 163, 204, 1) 0%, rgba(159, 197, 224, 0.42) 42%, rgba(111, 113, 179, 0) 72%, rgba(67, 34, 137, 0) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(184, 163, 204, 1)), color-stop(42%, rgba(159, 197, 224, 0.42)), color-stop(72%, rgba(111, 113, 179, 0)), color-stop(100%, rgba(67, 34, 137, 0)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(184, 163, 204, 1) 0%, rgba(159, 197, 224, 0.42) 42%, rgba(111, 113, 179, 0) 72%, rgba(67, 34, 137, 0) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(184, 163, 204, 1) 0%, rgba(159, 197, 224, 0.42) 42%, rgba(111, 113, 179, 0) 72%, rgba(67, 34, 137, 0) 100%);
+}
+
+/* SWITCH LIGHT POSITION */
+
+.den #switch_off:checked ~ .light {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.den #switch_1:checked ~ .light {
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
+
+.den #switch_2:checked ~ .light {
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+
+.den #switch_3:checked ~ .light {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.den #switch_4:checked ~ .light {
+  transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+}
+
+.den #switch_5:checked ~ .light {
+  transform: rotate(210deg);
+  -webkit-transform: rotate(210deg);
+  -o-transform: rotate(210deg);
+}
+
+/* SWITCH LIGHT */
+
+.den .dot {
+  z-index: 6;
+  width: 50%;
+  height: 12px;
+  margin-top: -6px;
+  transform-origin: 0% 50%;
+  -webkit-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+.den .dot span {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: #dae2e4;
+  background: -moz-linear-gradient(top, #dae2e4 0%, #ecf5f4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dae2e4), color-stop(100%, #ecf5f4));
+  background: -webkit-linear-gradient(top, #dae2e4 0%, #ecf5f4 100%);
+  background: -o-linear-gradient(top, #dae2e4 0%, #ecf5f4 100%);
+}
+
+/* SWITCH LIGHT POSITION */
+
+.den #switch_off:checked ~ .dot {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.den #switch_off:checked ~ .dot span {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.den #switch_1:checked ~ .dot {
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
+
+.den #switch_1:checked ~ .dot span {
+  opacity: .9;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+
+.den #switch_2:checked ~ .dot {
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+
+.den #switch_2:checked ~ .dot span {
+  opacity: .5;
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
+
+.den #switch_3:checked ~ .dot {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.den #switch_3:checked ~ .dot span {
+  opacity: .4;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.den #switch_4:checked ~ .dot {
+  transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+}
+
+.den #switch_4:checked ~ .dot span {
+  opacity: .5;
+  transform: rotate(-150deg);
+  -webkit-transform: rotate(-150deg);
+  -o-transform: rotate(-150deg);
+}
+
+.den #switch_5:checked ~ .dot {
+  transform: rotate(210deg);
+  -webkit-transform: rotate(210deg);
+  -o-transform: rotate(210deg);
+}
+
+.den #switch_5:checked ~ .dot span {
+  opacity: .9;
+  transform: rotate(-210deg);
+  -webkit-transform: rotate(-210deg);
+  -o-transform: rotate(-210deg);
+}
+
+/* LINE */
+
+.den hr.line {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 0;
+  margin-top: -1px;
+  border-width: 1px 0;
+  border-style: solid;
+  border-top-color: #3c3d3f;
+  border-bottom-color: #666769;
+}
+
+.den hr.line:nth-child(1) {
+  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+}
+
+.den hr.line:nth-child(2) {
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+}
+
+.con-radio {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                   <i class="fas fa-bars"></i>
+                   <i class="fas fa-times"></i>
+                </div>
+                <a href="../../index.html" class="logo">Programmer Fero</a>
+                <ul class="nav-list">
+                    <!-- <li>
+                        <a href="#">Home</a>
+                    </li> -->
+                    <li>
+                        <a href="../../html/html-css-projects.html">Html & Css Projectes<i class="fas fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="#">Web Templete <span>Soon</span></a>
+                        </li>
+
+                          <li>
+                            <a href="#">NavBar <span>Soon</span></a>
+                        </li>
+
+                      <li>
+                        <a href="#">Tricks <span>Soon</span></a>
+                    </li>
+                            <li>
+                                <a href="../../html-css-projects/login-form.html">Forms</a>
+                            </li>
+
+
+                            <li>
+                                <a href="../../html-css-projects/card-desgin.html">Card Desgins</a>
+                            </li>
+                            <li>
+                              <a href="../../html-css-projects/3d-shape.html">3D Shape</a>
+                          </li>
+                          <li>
+                            <a href="../../html-css-projects/icon.html">Icon</a>
+                        </li>
+                            <li>
+                              <a href="#">Others
+                                  <i class="fas fa-caret-down"></i></a>
+                              <ul class="sub-menu">
+                                  <li>
+                                      <a href="../../html-css-projects/loaders.html">Loaders</a>
+                                  </li>
+                                  <li>
+                                      <a href="../../html-css-projects/checkbox.html">Checkboxes</a>
+                                  </li>
+                                  <li>
+                                       <li>
+                                            <a href="../../html-css-projects/switch.html">Switches</a>
+                                       </li>
+                                        <li>
+                                            <a href="../../html-css-projects/input.html">inputs</a>
+                                        </li>
+                                         <li>
+                                             <a href="../../html-css-projects/radio-button.html">Radio Buttons</a>
+                                        </li>
+                                        <li>
+                                          <a href="../../html-css-projects/button.html">Buttons</a>
+                                      </li>
+                                  </li>
+                              </ul>
+                          </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                      <a href="../../html/javascript-projects.html">JavaScript Projects
+                          <i class="fas fa-caret-down"></i>
+                      </a>
+                      <ul class="sub-menu">
+                          <li>
+                              <a href="../../javascript-projects/javascript-games.html">JavaScript Games</a>
+                          </li>
+                                  <li>
+                                      <a href="../../javascript-projects/api-projects.html">Api Projects</a>
+                                  </li>
+                                  <li>
+                                      <a href="../../javascript-projects/form-validation.html">Form Validation</a>
+                                  </li>
+
+                                  <li>
+                                    <a href="#">Img Slider <span>Soon</span></a>
+                                  </li>
+                          </li>
+
+                      </ul>
+                  </li>
+
+
+                  <li>
+                    <a >Others
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Python Projects <span style="font-size: 9px;">Soon</span></a>
+                        </li>
+                                <li>
+                                    <a href="#" style="font-size: 12.5px;">Skektchware Swb <span style="font-size: 9px;">Soon</span></a>
+                                </li>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                    <!-- <li>
+                        <a href="#">Blog</a>
+                    </li> -->
+                    <li>
+                        <a href="../../html/contact.html">Contact Me</a>
+                    </li>
+                    <li class="move-right btn">
+                        <a href="../../html/upload-your-code.html">Upload Your Code<i class="fas fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="../../html/upload-your-code.html">My Web</a></li>
+                            <li><a href="https://forms.gle/PRVD4PsiEU7p7Bmn6">Google Form</a></li>
+                        </ul>    
+                    </li>
+                    
+                <!-- <li> <a href="" class="move-right btn">upload-your-code</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="html/contact.html">Contact Me</a>
+                        </li>
+
+                        <li>
+                            <a href="html/contact.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </li> -->
+                    </li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <section style="    
+    min-height: 8vh;
+    padding: 10rem 9% 2rem;">
+        <h2 class="heading">Radio<span style="font-size: 35px;"> Button</span></h2>
+        <h2 class="heading"><span style="font-size: 35px;">Programmer </span>Fero</h2>
+    </section>
+
+
+    <section>
+
+        <div class="con-radio">
+            <div class="tain">
+                <div class="de">
+                    <div class="den">
+                        <hr class="line">
+                        <hr class="line">
+                        <hr class="line">
+                        <div class="switch">
+                            <label for="switch_off"><span>OFF</span></label>
+                            <label for="switch_1"><span>1</span></label>
+                            <label for="switch_2"><span>2</span></label>
+                            <label for="switch_3"><span>3</span></label>
+                            <label for="switch_4"><span>4</span></label>
+                            <label for="switch_5"><span>5</span></label>
+                            <input type="radio" checked="" name="switch" id="switch_off">
+                            <input type="radio" name="switch" id="switch_1">
+                            <input type="radio" name="switch" id="switch_2">
+                            <input type="radio" name="switch" id="switch_3">
+                            <input type="radio" name="switch" id="switch_4">
+                            <input type="radio" name="switch" id="switch_5">
+                            <div class="light"><span></span></div>
+                            <div class="dot"><span></span></div>
+                            <div class="dene">
+                                <div class="denem">
+                                    <div class="deneme">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-boxes">
+            <div class="text-box HTMLBox">
+              <div class="topic">HTML Code:</div>
+              <textarea id="HTMLBox" readonly>
+                <div class="container">
+                    <div class="de">
+                        <div class="den">
+                            <hr class="line">
+                            <hr class="line">
+                            <hr class="line">
+                            <div class="switch">
+                                <label for="switch_off"><span>OFF</span></label>
+                                <label for="switch_1"><span>1</span></label>
+                                <label for="switch_2"><span>2</span></label>
+                                <label for="switch_3"><span>3</span></label>
+                                <label for="switch_4"><span>4</span></label>
+                                <label for="switch_5"><span>5</span></label>
+                                <input type="radio" checked="" name="switch" id="switch_off">
+                                <input type="radio" name="switch" id="switch_1">
+                                <input type="radio" name="switch" id="switch_2">
+                                <input type="radio" name="switch" id="switch_3">
+                                <input type="radio" name="switch" id="switch_4">
+                                <input type="radio" name="switch" id="switch_5">
+                                <div class="light"><span></span></div>
+                                <div class="dot"><span></span></div>
+                                <div class="dene">
+                                    <div class="denem">
+                                        <div class="deneme">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </textarea
+              >
+              <button id="HTMLButton">Copy Codes</button>
+            </div>
+            <div class="text-box CSSBox">
+              <div class="topic">CSS Code:</div>
+              <textarea id="CSSBox" readonly>
+                .container .origin {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    z-index: 111;
+                    width: 2px;
+                    height: 2px;
+                    margin: -1px 0 0 -1px;
+                    background-color: #f50;
+                  }
+                  
+                  .de {
+                    user-select: none;
+                    position: relative;
+                    width: 230px;
+                    height: 230px;
+                    border-radius: 100%;
+                    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+                    background-color: transparent;
+                  }
+                  
+                  .de .den, .de .dene, .de .denem, .de .deneme, .de .light, .de .dot {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                  }
+                  
+                  .den {
+                    position: relative;
+                    width: 220px;
+                    height: 220px;
+                    margin: -110px 0 0 -110px;
+                    border-radius: 100%;
+                    box-shadow: inset 0 3px 10px rgba(0, 0, 0, .6), 0 2px 20px rgba(255, 255, 255, 1);
+                    background: #888888;
+                    background: -moz-radial-gradient(center, ellipse cover, #888888 0%, #333333 100%);
+                    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #888888), color-stop(100%, #333333));
+                    background: -webkit-radial-gradient(center, ellipse cover, #888888 0%, #333333 100%);
+                    background: -o-radial-gradient(center, ellipse cover, #888888 0%, #333333 100%);
+                  }
+                  
+                  .dene {
+                    z-index: 4;
+                    width: 140px;
+                    height: 140px;
+                    margin: -70px 0 0 -70px;
+                    border-radius: 100%;
+                    box-shadow: inset 0 2px 2px rgba(255, 255, 255, .4), 0 3px 13px rgba(0, 0, 0, .85);
+                    background: #f2f6f5;
+                    background: -moz-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f6f5), color-stop(100%, #cbd5d6));
+                    background: -webkit-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+                    background: -o-linear-gradient(top, #f2f6f5 0%, #cbd5d6 100%);
+                  }
+                  
+                  .denem {
+                    width: 120px;
+                    height: 120px;
+                    margin: -60px 0 0 -60px;
+                    border-radius: 100%;
+                    background: #cbd5d6;
+                    background: -moz-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cbd5d6), color-stop(100%, #f2f6f5));
+                    background: -webkit-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
+                    background: -o-linear-gradient(top, #cbd5d6 0%, #f2f6f5 100%);
+                  }
+                  
+                  .deneme {
+                    width: 100px;
+                    height: 100px;
+                    margin: -50px 0 0 -50px;
+                    border-radius: 100%;
+                    box-shadow: inset 0 2px 3px rgba(255, 255, 255, .6), 0 8px 20px rgba(0, 0, 0, .9);
+                    background: #eef7f6;
+                    background: -moz-linear-gradient(top, #eef7f6 0%, #8d989a 100%);
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eef7f6), color-stop(100%, #8d989a));
+                    background: -webkit-linear-gradient(top, #eef7f6 0%, #8d989a 100%);
+                    background: -o-linear-gradient(top, #eef7f6 0%, #8d989a 100%);
+                  }
+                  
+                  .den .switch {
+                    z-index: 3;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  }
+                  
+                  .den .switch label {
+                    z-index: 2;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 50%;
+                    height: 70px;
+                    margin-top: -35px;
+                    transform-origin: 0% 50%;
+                    -webkit-transform-origin: 0% 50%;
+                    -o-transform-origin: 0% 50%;
+                  }
+                  
+                  .den .switch label:after {
+                    content: "";
+                    position: absolute;
+                    top: 6px;
+                    left: 1px;
+                    width: 100%;
+                    height: 30px;
+                    transform: rotate(-30deg);
+                    -webkit-transform: rotate(-30deg);
+                    -o-transform: rotate(-30deg);
+                  }
+                  
+                  .den .switch label:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 6px;
+                    left: 1px;
+                    width: 100%;
+                    height: 30px;
+                    transform: rotate(30deg);
+                    -webkit-transform: rotate(30deg);
+                    -o-transform: rotate(30deg);
+                  }
+                  
+                  .den .switch label span {
+                    z-index: 2;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 40px;
+                    height: 100%;
+                    font-weight: bold;
+                    font-size: 15px;
+                    line-height: 70px;
+                    text-align: center;
+                    color: #eee;
+                    text-shadow: 0 1px 0 #444;
+                  }
+                  
+                  .den .switch label:nth-child(1) {
+                    transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                  }
+                  
+                  .den .switch label:nth-child(1) span {
+                    right: 2px;
+                    font-size: 13px;
+                    transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                  }
+                  
+                  .den .switch label:nth-child(2) {
+                    transform: rotate(-30deg);
+                    -webkit-transform: rotate(-30deg);
+                    -o-transform: rotate(-30deg);
+                  }
+                  
+                  .den .switch label:nth-child(2) span {
+                    transform: rotate(30deg);
+                    -webkit-transform: rotate(30deg);
+                    -o-transform: rotate(30deg);
+                  }
+                  
+                  .den .switch label:nth-child(3) {
+                    transform: rotate(30deg);
+                    -webkit-transform: rotate(30deg);
+                    -o-transform: rotate(30deg);
+                  }
+                  
+                  .den .switch label:nth-child(3) span {
+                    transform: rotate(-30deg);
+                    -webkit-transform: rotate(-30deg);
+                    -o-transform: rotate(-30deg);
+                  }
+                  
+                  .den .switch label:nth-child(4) {
+                    transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                  }
+                  
+                  .den .switch label:nth-child(4) span {
+                    transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                  }
+                  
+                  .den .switch label:nth-child(5) {
+                    transform: rotate(150deg);
+                    -webkit-transform: rotate(150deg);
+                    -o-transform: rotate(150deg);
+                  }
+                  
+                  .den .switch label:nth-child(5) span {
+                    transform: rotate(-150deg);
+                    -webkit-transform: rotate(-150deg);
+                    -o-transform: rotate(-150deg);
+                  }
+                  
+                  .den .switch label:nth-child(6) {
+                    transform: rotate(210deg);
+                    -webkit-transform: rotate(210deg);
+                    -o-transform: rotate(210deg);
+                  }
+                  
+                  .den .switch label:nth-child(6) span {
+                    transform: rotate(-210deg);
+                    -webkit-transform: rotate(-210deg);
+                    -o-transform: rotate(-210deg);
+                  }
+                  
+                  .den .switch input {
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                  }
+                  
+                  /* SWITCH LIGHT */
+                  
+                  .den .light {
+                    z-index: 1;
+                    width: 50%;
+                    height: 100px;
+                    margin-top: -50px;
+                    transform-origin: 0% 50%;
+                    -webkit-transform-origin: 0% 50%;
+                    -o-transform-origin: 0% 50%;
+                    transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                    -webkit-transition: all .5s;
+                    transition: all .5s;
+                    -o-transition: all .5s;
+                  }
+                  
+                  .den .light span {
+                    opacity: .4;
+                    position: absolute;
+                    top: 0;
+                    left: 15px;
+                    width: 100px;
+                    height: 100px;
+                    background: -moz-radial-gradient(center, ellipse cover, rgba(184, 163, 204, 1) 0%, rgba(159, 197, 224, 0.42) 42%, rgba(111, 113, 179, 0) 72%, rgba(67, 34, 137, 0) 100%);
+                    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(184, 163, 204, 1)), color-stop(42%, rgba(159, 197, 224, 0.42)), color-stop(72%, rgba(111, 113, 179, 0)), color-stop(100%, rgba(67, 34, 137, 0)));
+                    background: -webkit-radial-gradient(center, ellipse cover, rgba(184, 163, 204, 1) 0%, rgba(159, 197, 224, 0.42) 42%, rgba(111, 113, 179, 0) 72%, rgba(67, 34, 137, 0) 100%);
+                    background: -o-radial-gradient(center, ellipse cover, rgba(184, 163, 204, 1) 0%, rgba(159, 197, 224, 0.42) 42%, rgba(111, 113, 179, 0) 72%, rgba(67, 34, 137, 0) 100%);
+                  }
+                  
+                  /* SWITCH LIGHT POSITION */
+                  
+                  .den #switch_off:checked ~ .light {
+                    transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                  }
+                  
+                  .den #switch_1:checked ~ .light {
+                    transform: rotate(-30deg);
+                    -webkit-transform: rotate(-30deg);
+                    -o-transform: rotate(-30deg);
+                  }
+                  
+                  .den #switch_2:checked ~ .light {
+                    transform: rotate(30deg);
+                    -webkit-transform: rotate(30deg);
+                    -o-transform: rotate(30deg);
+                  }
+                  
+                  .den #switch_3:checked ~ .light {
+                    transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                  }
+                  
+                  .den #switch_4:checked ~ .light {
+                    transform: rotate(150deg);
+                    -webkit-transform: rotate(150deg);
+                    -o-transform: rotate(150deg);
+                  }
+                  
+                  .den #switch_5:checked ~ .light {
+                    transform: rotate(210deg);
+                    -webkit-transform: rotate(210deg);
+                    -o-transform: rotate(210deg);
+                  }
+                  
+                  /* SWITCH LIGHT */
+                  
+                  .den .dot {
+                    z-index: 6;
+                    width: 50%;
+                    height: 12px;
+                    margin-top: -6px;
+                    transform-origin: 0% 50%;
+                    -webkit-transform-origin: 0% 50%;
+                    -o-transform-origin: 0% 50%;
+                    transition: all .5s;
+                    -moz-transition: all .5s;
+                    -o-transition: all .5s;
+                  }
+                  
+                  .den .dot span {
+                    position: absolute;
+                    top: 0;
+                    left: 30px;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 100%;
+                    background: #dae2e4;
+                    background: -moz-linear-gradient(top, #dae2e4 0%, #ecf5f4 100%);
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dae2e4), color-stop(100%, #ecf5f4));
+                    background: -webkit-linear-gradient(top, #dae2e4 0%, #ecf5f4 100%);
+                    background: -o-linear-gradient(top, #dae2e4 0%, #ecf5f4 100%);
+                  }
+                  
+                  /* SWITCH LIGHT POSITION */
+                  
+                  .den #switch_off:checked ~ .dot {
+                    transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                  }
+                  
+                  .den #switch_off:checked ~ .dot span {
+                    transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                  }
+                  
+                  .den #switch_1:checked ~ .dot {
+                    transform: rotate(-30deg);
+                    -webkit-transform: rotate(-30deg);
+                    -o-transform: rotate(-30deg);
+                  }
+                  
+                  .den #switch_1:checked ~ .dot span {
+                    opacity: .9;
+                    transform: rotate(30deg);
+                    -webkit-transform: rotate(30deg);
+                    -o-transform: rotate(30deg);
+                  }
+                  
+                  .den #switch_2:checked ~ .dot {
+                    transform: rotate(30deg);
+                    -webkit-transform: rotate(30deg);
+                    -o-transform: rotate(30deg);
+                  }
+                  
+                  .den #switch_2:checked ~ .dot span {
+                    opacity: .5;
+                    transform: rotate(-30deg);
+                    -webkit-transform: rotate(-30deg);
+                    -o-transform: rotate(-30deg);
+                  }
+                  
+                  .den #switch_3:checked ~ .dot {
+                    transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                  }
+                  
+                  .den #switch_3:checked ~ .dot span {
+                    opacity: .4;
+                    transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                  }
+                  
+                  .den #switch_4:checked ~ .dot {
+                    transform: rotate(150deg);
+                    -webkit-transform: rotate(150deg);
+                    -o-transform: rotate(150deg);
+                  }
+                  
+                  .den #switch_4:checked ~ .dot span {
+                    opacity: .5;
+                    transform: rotate(-150deg);
+                    -webkit-transform: rotate(-150deg);
+                    -o-transform: rotate(-150deg);
+                  }
+                  
+                  .den #switch_5:checked ~ .dot {
+                    transform: rotate(210deg);
+                    -webkit-transform: rotate(210deg);
+                    -o-transform: rotate(210deg);
+                  }
+                  
+                  .den #switch_5:checked ~ .dot span {
+                    opacity: .9;
+                    transform: rotate(-210deg);
+                    -webkit-transform: rotate(-210deg);
+                    -o-transform: rotate(-210deg);
+                  }
+                  
+                  /* LINE */
+                  
+                  .den hr.line {
+                    z-index: 1;
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    height: 0;
+                    margin-top: -1px;
+                    border-width: 1px 0;
+                    border-style: solid;
+                    border-top-color: #3c3d3f;
+                    border-bottom-color: #666769;
+                  }
+                  
+                  .den hr.line:nth-child(1) {
+                    transform: rotate(-60deg);
+                    -webkit-transform: rotate(-60deg);
+                    -o-transform: rotate(-60deg);
+                  }
+                  
+                  .den hr.line:nth-child(2) {
+                    transform: rotate(60deg);
+                    -webkit-transform: rotate(60deg);
+                    -o-transform: rotate(60deg);
+                  }
+            </textarea
+              >
+              <button id="CSSButton">Copy Codes</button>
+            </div>
+          </div>
+      
+          <script>
+            // HTML BOx JS Code
+            let HTMLBox = document.getElementById("HTMLBox");
+            let HTMLButton = document.getElementById("HTMLButton");
+      
+            HTMLButton.onclick = function () {
+              HTMLBox.select();
+              document.execCommand("copy");
+              HTMLButton.innerText = "Codes Copied";
+            };
+      
+            // CSS Box Js Code
+            let CSSBox = document.getElementById("CSSBox");
+            let CSSButton = document.getElementById("CSSButton");
+      
+            CSSButton.onclick = function () {
+              CSSBox.select();
+              document.execCommand("copy");
+              CSSButton.innerText = "Codes Copied";
+            };
+            // JavaScript BOx JS Code
+            let JSBox = document.getElementById("JSBox");
+            let JSButton = document.getElementById("JSButton");
+      
+            JSButton.onclick = function () {
+              JSBox.select();
+              document.execCommand("copy");
+              JSButton.innerText = "Codes Copied";
+            };
+          </script>
+    </section>
+
+
+    <footer class="footer" id="footer">
+        <div class="foot">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Html & Css Projects</h4>
+                    <ul>
+                        <li><a href="../../html-css-projects/3d-shape.html">3D Shape</a></li>
+                        <li><a href="../../html-css-projects/login-form.html">Forms</a></li>
+                        <li><a href="../../html-css-projects/icon.html">Icon</a></li>
+                        <li><a href="../../html-css-projects/loaders.html">Loaders</a></li>
+                        <li><a href="../../html-css-projects/card-desgin.html">Cards</a></li>
+                        <li><a href="../../html-css-projects/input.html">Inputs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>JavaScript Projects</h4>
+                    <ul>
+                        <li><a href="../../javascript-projects/javascript-games.html">JavaScript Games</a></li>
+                        <li><a href="../../javascript-projects/api-projects.html">Api Projects</a></li>
+                        <li><a href="../../javascript-projects/form-validation.html">Form Validation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Others</h4>
+                    <ul>
+                        <li><a href="#">Python <span>Soon</span></a></li>
+                        <li><a href="#">Skektchware Swb <span>Soon</span></a></li>
+                    </ul>
+                </div>
+                <div  class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@Programmer_Fero_Academy"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://instagram.com/programmer_fero?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/channel/0029Va0tMIn7oQhdUy3yMR1x"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="https://www.facebook.com/felobater.fam1?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <p class="p-foot">Copyright &copy; 2023 By Programmer Fero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../../js/Projects-Html-Css/radio-button.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
