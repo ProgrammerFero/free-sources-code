@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Fero</title>
+    <style>
+        .usernamelabel {
+  display: block;
+  color: white;
+  font-size: 14px;
+  padding: 5px 5px;
+}
+
+#usernameField {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: #292929;
+  border-radius: 30px;
+  border: 2px solid #292929;
+  padding: 0px 12px;
+  outline: none;
+  caret-color: rgb(152, 88, 255);
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+  transition-duration: .2s;
+}
+
+#usernameField:focus,
+#usernameField:valid {
+  border: 2px solid rgb(152, 88, 255);
+  transition-duration: .2s;
+}
+
+
+    </style>
+</head>
+<body>
+    <label for="usernameField" class="usernamelabel label">Username</label>
+    <input type="text" placeholder="@" id="usernameField" required="required">
+</body>
+</html>

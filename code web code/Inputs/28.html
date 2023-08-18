@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Fero</title>
+    <style>
+        .wrapper {
+  position: relative;
+}
+
+.input {
+  width: 190px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px #323232 solid;
+  padding: 5px 15px;
+  background-color: #e8e8e8;
+  font-size: 15;
+  font-weight: 500;
+}
+
+.placeholder {
+  width: 65%;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-align: center;
+  color: blueviolet;
+  background-color: #e8e8e8;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.input::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.input:focus + .placeholder {
+  opacity: 1;
+}
+
+.input:focus {
+  outline: 2px solid blueviolet;
+  border: none;
+  color: blueviolet;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+}
+
+    </style>
+</head>
+<body>
+    <label class="wrapper">
+        <input type="text" placeholder="Input label" name="text" class="input">
+        <span class="placeholder">Input label</span>
+      </label>
+      
+      
+</body>
+</html>
