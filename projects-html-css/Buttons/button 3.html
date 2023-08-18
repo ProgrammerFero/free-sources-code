@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/Projects-Html-Css/button.css">
+    <link rel="shortcut icon" href="../../assset/mylogo.png" type="image/x-icon">
+    <title>Programmer Fero</title>
+    <style>
+        .download-button {
+ position: relative;
+ border-width: 0;
+ color: white;
+ font-size: 15px;
+ font-weight: 600;
+ border-radius: 4px;
+ z-index: 1;
+}
+
+.download-button .docs {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 10px;
+ min-height: 40px;
+ padding: 0 10px;
+ border-radius: 4px;
+ z-index: 1;
+ background-color: #242a35;
+ border: solid 1px #e8e8e82d;
+ transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+ position: absolute;
+ inset: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ max-width: 90%;
+ margin: 0 auto;
+ z-index: -1;
+ border-radius: 4px;
+ transform: translateY(0%);
+ background-color: #01e056;
+ border: solid 1px #01e0572d;
+ transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+ transform: translateY(100%)
+}
+
+.download svg polyline,.download svg line {
+ animation: docs 1s infinite;
+}
+
+@keyframes docs {
+ 0% {
+  transform: translateY(0%);
+ }
+
+ 50% {
+  transform: translateY(-15%);
+ }
+
+ 100% {
+  transform: translateY(0%);
+ }
+}
+.con-button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                   <i class="fas fa-bars"></i>
+                   <i class="fas fa-times"></i>
+                </div>
+                <a href="../../index.html" class="logo">Programmer Fero</a>
+                <ul class="nav-list">
+                    <!-- <li>
+                        <a href="#">Home</a>
+                    </li> -->
+                    <li>
+                        <a href="../../html/html-css-projects.html">Html & Css Projectes<i class="fas fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="#">Web Templete <span>Soon</span></a>
+                        </li>
+
+                          <li>
+                            <a href="#">NavBar <span>Soon</span></a>
+                        </li>
+
+                      <li>
+                        <a href="#">Tricks <span>Soon</span></a>
+                    </li>
+                            <li>
+                                <a href="../../html-css-projects/login-form.html">Forms</a>
+                            </li>
+
+
+                            <li>
+                                <a href="../../html-css-projects/card-desgin.html">Card Desgins</a>
+                            </li>
+                            <li>
+                              <a href="../../html-css-projects/3d-shape.html">3D Shape</a>
+                          </li>
+                          <li>
+                            <a href="../../html-css-projects/icon.html">Icon</a>
+                        </li>
+                            <li>
+                              <a href="#">Others
+                                  <i class="fas fa-caret-down"></i></a>
+                              <ul class="sub-menu">
+                                  <li>
+                                      <a href="../../html-css-projects/loaders.html">Loaders</a>
+                                  </li>
+                                  <li>
+                                      <a href="../../html-css-projects/checkbox.html">Checkboxes</a>
+                                  </li>
+                                  <li>
+                                       <li>
+                                            <a href="../../html-css-projects/switch.html">Switches</a>
+                                       </li>
+                                        <li>
+                                            <a href="../../html-css-projects/input.html">inputs</a>
+                                        </li>
+                                         <li>
+                                             <a href="../../html-css-projects/radio-button.html">Radio Buttons</a>
+                                        </li>
+                                        <li>
+                                          <a href="../../html-css-projects/button.html">Buttons</a>
+                                      </li>
+                                  </li>
+                              </ul>
+                          </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                      <a href="../../html/javascript-projects.html">JavaScript Projects
+                          <i class="fas fa-caret-down"></i>
+                      </a>
+                      <ul class="sub-menu">
+                          <li>
+                              <a href="../../javascript-projects/javascript-games.html">JavaScript Games</a>
+                          </li>
+                                  <li>
+                                      <a href="../../javascript-projects/api-projects.html">Api Projects</a>
+                                  </li>
+                                  <li>
+                                      <a href="../../javascript-projects/form-validation.html">Form Validation</a>
+                                  </li>
+
+                                  <li>
+                                    <a href="#">Img Slider <span>Soon</span></a>
+                                  </li>
+                          </li>
+
+                      </ul>
+                  </li>
+
+
+                  <li>
+                    <a >Others
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Python Projects <span style="font-size: 9px;">Soon</span></a>
+                        </li>
+                                <li>
+                                    <a href="#" style="font-size: 12.5px;">Skektchware Swb <span style="font-size: 9px;">Soon</span></a>
+                                </li>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                    <!-- <li>
+                        <a href="#">Blog</a>
+                    </li> -->
+                    <li>
+                        <a href="../../html/contact.html">Contact Me</a>
+                    </li>
+                    <li class="move-right btn">
+                        <a href="../../html/upload-your-code.html">Upload Your Code<i class="fas fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="../../html/upload-your-code.html">My Web</a></li>
+                            <li><a href="https://forms.gle/PRVD4PsiEU7p7Bmn6">Google Form</a></li>
+                        </ul>    
+                    </li>
+                    
+                <!-- <li> <a href="" class="move-right btn">upload-your-code</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="html/contact.html">Contact Me</a>
+                        </li>
+
+                        <li>
+                            <a href="html/contact.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </li> -->
+                    </li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <section style="    
+    min-height: 8vh;
+    padding: 10rem 9% 2rem;">
+        <h2 class="heading"> Button <br> <span style="font-size: 35px;">Programmer Fero</span></h2>
+    </section>
+
+
+    <section>
+        <div class="con-button">
+            <button class="download-button">
+                <div class="docs"><svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line y2="13" x2="8" y1="13" x1="16"></line><line y2="17" x2="8" y1="17" x1="16"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Docs</div>
+                <div class="download">
+                  <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line y2="3" x2="12" y1="15" x1="12"></line></svg>
+                </div>
+              </button>
+        </div>
+        <div class="text-boxes">
+            <div class="text-box HTMLBox">
+              <div class="topic">HTML Code:</div>
+              <textarea id="HTMLBox" readonly>
+                <button class="download-button">
+                    <div class="docs">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line y2="13" x2="8" y1="13" x1="16"></line><line y2="17" x2="8" y1="17" x1="16"></line><polyline points="10 9 9 9 8 9"></polyline>
+                        </svg> Docs</div>
+                    <div class="download">
+                      <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line y2="3" x2="12" y1="15" x1="12"></line></svg>
+                    </div>
+                  </button>
+            </textarea
+              >
+              <button id="HTMLButton">Copy Codes</button>
+            </div>
+            <div class="text-box CSSBox">
+              <div class="topic">CSS Code:</div>
+              <textarea id="CSSBox" readonly>
+                .download-button {
+                    position: relative;
+                    border-width: 0;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border-radius: 4px;
+                    z-index: 1;
+                   }
+                   
+                   .download-button .docs {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+                    min-height: 40px;
+                    padding: 0 10px;
+                    border-radius: 4px;
+                    z-index: 1;
+                    background-color: #242a35;
+                    border: solid 1px #e8e8e82d;
+                    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+                   }
+                   
+                   .download-button:hover {
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                   }
+                   
+                   .download {
+                    position: absolute;
+                    inset: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 90%;
+                    margin: 0 auto;
+                    z-index: -1;
+                    border-radius: 4px;
+                    transform: translateY(0%);
+                    background-color: #01e056;
+                    border: solid 1px #01e0572d;
+                    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+                   }
+                   
+                   .download-button:hover .download {
+                    transform: translateY(100%)
+                   }
+                   
+                   .download svg polyline,.download svg line {
+                    animation: docs 1s infinite;
+                   }
+                   
+                   @keyframes docs {
+                    0% {
+                     transform: translateY(0%);
+                    }
+                   
+                    50% {
+                     transform: translateY(-15%);
+                    }
+                   
+                    100% {
+                     transform: translateY(0%);
+                    }
+                   }
+            </textarea
+              >
+              <button id="CSSButton">Copy Codes</button>
+            </div>
+          </div>
+      
+          <script>
+            // HTML BOx JS Code
+            let HTMLBox = document.getElementById("HTMLBox");
+            let HTMLButton = document.getElementById("HTMLButton");
+      
+            HTMLButton.onclick = function () {
+              HTMLBox.select();
+              document.execCommand("copy");
+              HTMLButton.innerText = "Codes Copied";
+            };
+      
+            // CSS Box Js Code
+            let CSSBox = document.getElementById("CSSBox");
+            let CSSButton = document.getElementById("CSSButton");
+      
+            CSSButton.onclick = function () {
+              CSSBox.select();
+              document.execCommand("copy");
+              CSSButton.innerText = "Codes Copied";
+            };
+            // JavaScript BOx JS Code
+            let JSBox = document.getElementById("JSBox");
+            let JSButton = document.getElementById("JSButton");
+      
+            JSButton.onclick = function () {
+              JSBox.select();
+              document.execCommand("copy");
+              JSButton.innerText = "Codes Copied";
+            };
+          </script>
+    </section>
+
+
+    <footer class="footer" id="footer">
+        <div class="foot">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Html & Css Projects</h4>
+                    <ul>
+                        <li><a href="../../html-css-projects/3d-shape.html">3D Shape</a></li>
+                        <li><a href="../../html-css-projects/login-form.html">Forms</a></li>
+                        <li><a href="../../html-css-projects/icon.html">Icon</a></li>
+                        <li><a href="../../html-css-projects/loaders.html">Loaders</a></li>
+                        <li><a href="../../html-css-projects/card-desgin.html">Cards</a></li>
+                        <li><a href="../../html-css-projects/input.html">Inputs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>JavaScript Projects</h4>
+                    <ul>
+                        <li><a href="../../javascript-projects/javascript-games.html">JavaScript Games</a></li>
+                        <li><a href="../../javascript-projects/api-projects.html">Api Projects</a></li>
+                        <li><a href="../../javascript-projects/form-validation.html">Form Validation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Others</h4>
+                    <ul>
+                        <li><a href="#">Python <span>Soon</span></a></li>
+                        <li><a href="#">Skektchware Swb <span>Soon</span></a></li>
+                    </ul>
+                </div>
+                <div  class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@Programmer_Fero_Academy"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://instagram.com/programmer_fero?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/channel/0029Va0tMIn7oQhdUy3yMR1x"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="https://www.facebook.com/felobater.fam1?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <p class="p-foot">Copyright &copy; 2023 By Programmer Fero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../../js/Projects-Html-Css/button.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
