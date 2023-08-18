@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Fero</title>
+    <style>
+button {
+  width: 170px;
+  height: 60px;
+  color: #fff;
+  background: #000;
+  font-size: 17px;
+  text-decoration: none;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0 #000;
+  transition: 0.5s;
+  position: relative;
+}
+
+button:hover {
+  box-shadow: 8px 10px 0 #000;
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+  margin-top: 5px;
+}
+
+button span {
+  margin-left: 10px;
+  width: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+button:hover span {
+  width: 30px;
+}
+    </style>
+</head>
+<body>
+    <button>
+        Hover Me <span>⟶</span>
+      </button>
+</body>
+</html>
