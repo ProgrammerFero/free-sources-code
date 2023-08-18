@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Fero</title>
+    <style>
+        .rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 50px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="rating">
+        <input type="radio" id="star5" name="rate" value="5">
+        <label for="star5" title="text"></label>
+        <input type="radio" id="star4" name="rate" value="4">
+        <label for="star4" title="text"></label>
+        <input checked="" type="radio" id="star3" name="rate" value="3">
+        <label for="star3" title="text"></label>
+        <input type="radio" id="star2" name="rate" value="2">
+        <label for="star2" title="text"></label>
+        <input type="radio" id="star1" name="rate" value="1">
+        <label for="star1" title="text"></label>
+      </div>
+</body>
+</html>
