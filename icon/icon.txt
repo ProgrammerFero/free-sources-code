@@ -1,0 +1,91 @@
+<i class='bx bxl-youtube'></i>
+
+<i class='bx bxl-facebook' ></i>
+
+<i class='bx bxl-whatsapp' ></i>
+
+<i class='bx bxl-twitter'></i>
+
+<i class='bx bxl-tiktok'></i>
+
+<i class='bx bxl-instagram'></i>
+
+<i class='bx bxl-linkedin'></i>
+
+<i class='bx bx-link-alt'></i>
+
+<i class='bx bx-link' ></i>
+
+<i class='bx bx-link-external'></i>
+
+<i class='bx bxl-telegram'></i>
+
+<i class='bx bxl-snapchat'></i>
+
+<i class='bx bxl-meta'></i>
+
+<i class='bx bxl-gmail'></i>
+
+<i class='bx bxl-google'></i>
+
+<i class='bx bxl-github'></i>
+
+<i class='bx bxl-blogger'></i>
+
+<i class='bx bxl-android'></i>
+
+<i class='bx bxl-apple'></i>
+
+<i class='bx bxl-windows'></i>
+
+<i class='bx bxl-messenger'></i>
+
+<i class='bx bxl-amazon'></i>
+
+<i class='bx bxl-paypal'></i>
+
+
+linux
+<i class='bx bxl-tux'></i>
+
+<i class='bx bxl-firebase'></i>
+
+<i class='bx bxl-blender'></i>
+
+<i class='bx bxs-map'></i>
+
+right
+<i class='bx bxs-chevrons-right'></i>
+
+<i class='bx bxs-chevron-right'></i>
+
+<i class='bx bxs-right-arrow-alt' ></i>
+
+<i class='bx bxs-right-arrow'></i>
+
+left
+<i class='bx bxs-left-arrow'></i>
+
+<i class='bx bxs-chevron-left'></i>
+
+<i class='bx bx-left-arrow-alt'></i>
+
+<i class='bx bx-chevrons-left'></i>
+
+cloud
+
+<i class='bx bxs-cloud-upload'></i>
+
+download
+
+<i class='bx bxs-download'></i>
+
+<i class='bx bx-download'></i>
+
+<i class='bx bx-printer'></i>
+
+share
+
+<i class='bx bxs-share-alt'></i>
+
+<i class='bx bx-share' ></i>
